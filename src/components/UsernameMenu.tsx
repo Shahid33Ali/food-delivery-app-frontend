@@ -20,6 +20,14 @@ export default function UsernameMenu() {
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         <DropdownMenuItem className="flex justify-center">
+          <Link
+            to="/manage-restaurant"
+            className="font-bold hover:text-orange-500"
+          >
+            Manage Restaurant
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem className="flex justify-center">
           <Link to="/user-profile" className="font-bold hover:text-orange-500">
             User Pofile
           </Link>
