@@ -21,7 +21,7 @@ export default function Auth0ProviderWithNavigate({ children }: Props) {
     <Auth0Provider
       domain={domain}
       clientId={clientId}
-      authorizationParams={{ redirect_uri: redirectUri, audience }}
+      authorizationParams={{ redirect_uri: window.location.origin, audience }}
       onRedirectCallback={onRedirectCallback}
     >
       {children}
