@@ -20,6 +20,7 @@ export type Restaurant = {
   estimatedDeliveryTime: number;
 };
 export type MenuItem = {
+  _id: string;
   name: string;
   price: number;
 };

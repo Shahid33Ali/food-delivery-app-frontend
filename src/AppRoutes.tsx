@@ -7,6 +7,7 @@ import ProtectedRoute from "./auth/ProtectedRoute";
 import ManageRestaurantPage from "./pages/ManageRestaurantPage";
 
 import SearchPage from "./pages/SearchPage";
+import DetailPage from "./pages/DetailPage";
 
 export const AppRotes = () => {
   return (
@@ -44,6 +45,14 @@ export const AppRotes = () => {
         element={
           <Layout showHero={false}>
             <SearchPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/details/:restaurantId"
+        element={
+          <Layout showHero={false}>
+            <DetailPage />
           </Layout>
         }
       />
